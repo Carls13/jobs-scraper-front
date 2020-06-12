@@ -9,7 +9,7 @@ export const useFetching = (endpoint) => {
 
 	useEffect(() => {
 		axios.get(endpoint).then((response) => {
-			setData(response.data);
+			setData(response.data.jobs);
 			setLoading(false);
 		}).catch((error) => {
 			setLoading(false);

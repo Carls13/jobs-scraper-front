@@ -27,7 +27,7 @@ export const PrevNext = styled.div`
 export const Prev = styled.div`
 	margin: 0 30px;
 	cursor: pointer;
-	color: hsl(304, 93%, 17%);
+	color: hsl(192, 70%, 51%);
 `;
 
 export const Pages = styled.div`
@@ -41,13 +41,13 @@ export const Page = styled.div`
 	cursor: pointer;
 	margin: 5px;
 	color: white;
-	${props => props.current ? 'background-color: hsl(304, 93%, 17%);' : 'background-color: black;'}
+	${props => props.current ? 'background-color: hsl(192, 70%, 51%);' : 'background-color: black;'}
 `
 
 export const Next = styled.div`
 	margin: 0 30px;
 	cursor: pointer;
-	color: hsl(304, 93%, 17%);
+	color: hsl(192, 70%, 51%);
 `;
 
 export const Info = styled.div`

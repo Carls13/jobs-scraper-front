@@ -17,7 +17,8 @@ export const Index = () => {
 
 	const handleClick = (e) => {
 		e.preventDefault();
-		navigate(`/results/${query}`);
+		const myQuery = query.toLowerCase().replace(" ", "-");
+		navigate(`/results/${myQuery}`);
 	}
 
 	return (
