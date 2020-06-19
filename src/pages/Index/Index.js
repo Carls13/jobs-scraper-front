@@ -1,38 +1,16 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-import { Container, Illustration, Instructions, Input, Button, Disclaimer } from './styles';
+import { Container, Illustration, Disclaimer } from './styles';
 
-import { useNavigate } from "@reach/router";
+import { SearchBlock } from './../../components/SearchBlock/SearchBlock';
 
 import illustration from './rocket.svg';
 
 export const Index = () => {
-	const [query, setQuery] = useState("");
-    const navigate = useNavigate();
-
-	const handleChange = (e) => {
-		const { value } = e.target;
-		setQuery(value);
-	}
-
-	const handleClick = (e) => {
-		e.preventDefault();
-		const myQuery = query.toLowerCase().replace(" ", "-");
-		navigate(`/results/${myQuery}`);
-	}
-
 	return (
 		<Container>
-			<Instructions>
-				Job scraper
-			</Instructions>
 			<Illustration src={illustration} alt="Carls 13 jobs scraper"/>
-			<Input value={query}
-				   placeholder="Enter the position you're looking for..."
-				   onChange={handleChange}
-				   type="text"
-				   name="query" />
-			<Button onClick={handleClick}>Search</Button>
+			<SearchBlock/>
 			<Disclaimer>
 				The data is obtained from pages like Get On Board, RemoteOk and Triple Byte. <br/>
 				Please, note that some of them didn't publish a date so the offer info could mismatch from the actual one.

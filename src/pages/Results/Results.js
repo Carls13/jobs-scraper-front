@@ -8,8 +8,9 @@ import { Pagination } from './../../components/Pagination/Pagination';
 import { Filtering } from './../../components/Filtering/Filtering';
 import { InfoModal } from './../../components/InfoModal/InfoModal';
 import { Job } from './../../components/Job/Job';
+import { SearchBlock } from './../../components/SearchBlock/SearchBlock';
 
-import { Container, JobsSection, JobsList } from './styles.js';
+import { Container, JobsSection, JobsList, Instructions } from './styles.js';
 
 const JOBS_PER_PAGE = 10;
 
@@ -22,7 +23,7 @@ const INITIAL_FILTERS = [
 ];
 
 export const Results = ({ query }) => {
-	const [loading, jobs, error, setError] = useFetching(`https://carls13-scraper-api.herokuapp.com/jobs?query=${query}`);
+	const [loading, jobs, error, setError, setJobs, setLoading] = useFetching(`https://carls13-scraper-api.herokuapp.com/jobs?query=${query}`);
 
 	const [paginatedData, 
 			currentPage, 
@@ -51,6 +52,11 @@ export const Results = ({ query }) => {
 					setPage={setCurrent}
 					recordsPerPage={JOBS_PER_PAGE}
 					/>
+					<Instructions>Wanna search something else?</Instructions>
+					<SearchBlock handleSubmit={() => {
+						setJobs([]);
+						setLoading(true);
+					}}/>
 				</JobsSection>
 			}
 		</Container>

@@ -16,7 +16,7 @@ export const useFetching = (endpoint) => {
 			setError(error.message);
 		})
 		// eslint-disable-next-line
-	}, [])
+	}, [loading])
 
-	return [loading, data, error, setError];
+	return [loading, data, error, setError, setData, setLoading];
 }

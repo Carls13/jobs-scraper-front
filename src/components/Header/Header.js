@@ -3,7 +3,8 @@ import React, { useState, Fragment } from 'react';
 import { HeaderContainer, 
 		LogoContainer, 
 		Logo, 
-		MenuContainer, 
+		TitleContainer, 
+		MenuContainer,
 		Option, 
 		ButtonContainer, 
 		Anchor, 
@@ -26,9 +27,10 @@ export const Header = () => {
 				<LogoContainer>
 					<Logo src={logo} alt="Easybank"/>
 				</LogoContainer>
+				<TitleContainer>Find the job you're looking for</TitleContainer>
 				<MenuContainer>
-					<Option href="#contact">Home</Option>
-					<Option href="#contact">About</Option>
+					<Option to="/">Home</Option>
+					<Option to="/about">About</Option>
 				</MenuContainer>
 				<ButtonContainer>
 					<Anchor href="#contact">Search now!</Anchor>
@@ -38,8 +40,8 @@ export const Header = () => {
 				</BurgerContainer>
 			</HeaderContainer>
 			<MobileMenu onClick={() => toggleMenu(false)} showMenu={showMenu}>
-				<MobileOption href="#contact">Home</MobileOption>
-				<MobileOption href="#contact">About</MobileOption>
+				<MobileOption to="/">Home</MobileOption>
+				<MobileOption to="/about">About</MobileOption>
 			</MobileMenu>
 		</Fragment>
 	)

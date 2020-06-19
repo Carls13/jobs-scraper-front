@@ -1,5 +1,7 @@
 import styled, { css } from 'styled-components';
 
+import { Link as LinkRouter } from '@reach/router';
+
 export const HeaderContainer = styled.header`
 	padding: 15px;
 	margin: 10px 0;
@@ -9,7 +11,7 @@ export const HeaderContainer = styled.header`
 `;
 
 export const LogoContainer = styled.div`
-	width: 10%;
+	width: 20%;
 	margin: 0 5%;
 
 	@media screen and (max-width: 600px) {
@@ -19,12 +21,26 @@ export const LogoContainer = styled.div`
 `;
 
 export const Logo = styled.img`
-	width: 50%;
+	display: block;
+	width: 60%;
+`;
+
+export const TitleContainer = styled.div`
+	width: 40%;
+	margin: 0;
+	font-weight: bold;
+	font-size: 24px;
+
+	@media screen and (max-width: 600px) {
+		display: none;
+		width: unset;
+		margin: unset;
+	}
 `;
 
 export const MenuContainer = styled.div`
-	width: 40%;
-	margin: 0 5%;
+	width: 35%;
+	margin: 0;
 	display: flex;
 	flex-direction: row;
 
@@ -35,7 +51,7 @@ export const MenuContainer = styled.div`
 	}
 `;
 
-export const Option = styled.a`
+export const Option = styled(LinkRouter)`
 	text-decoration: none;
 	color: black;
 	width: 15%;
@@ -50,7 +66,7 @@ export const Option = styled.a`
 
 export const ButtonContainer = styled.div`
 	width: 15%;
-	margin: 0 7.5%;
+	margin: 0 5%;
 
 	@media screen and (max-width: 600px) {
 		display: none;
@@ -61,7 +77,7 @@ export const ButtonContainer = styled.div`
 
 export const Anchor = styled.a`
 	text-decoration: none;
-	background: linear-gradient(90deg, hsl(136, 65%, 51%) 0%, hsl(192, 70%, 51%) 100%);
+	background: hsl(192, 70%, 51%);
 	padding: 12.5px 10px;
 	border-radius: 20px;
     width: auto;
@@ -123,7 +139,7 @@ export const MobileMenu = styled.div`
 	}
 `;
 
-export const MobileOption = styled.a`
+export const MobileOption = styled(LinkRouter)`
 	text-decoration: none;
 	color: black;
 	text-align: center;

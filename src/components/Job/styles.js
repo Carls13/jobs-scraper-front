@@ -8,6 +8,12 @@ export const Container = styled.div`
 	width: 100%;
 	border: 1px solid black;
     border-radius: 10px;
+
+    @media screen and (max-width: 600px) {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
 `;
 
 export const FirstColumn = styled.div`
@@ -15,6 +21,9 @@ export const FirstColumn = styled.div`
 	flex-direction: column;
 	width: 70%;
 	padding: 10px;
+	@media screen and (max-width: 600px) {
+		width: 100%;
+	}
 `;
 
 export const SecondColumn = styled.div`
@@ -22,6 +31,9 @@ export const SecondColumn = styled.div`
 	flex-direction: column;
 	width: 30%;
 	padding: 10px;
+	@media screen and (max-width: 600px) {
+		width: 100%;
+	}
 `;
 
 export const JobTitle = styled.h2`
@@ -50,5 +62,6 @@ export const Link = styled.a`
 
 	@media screen and (max-width: 600px) {
 		width: 70%;
+		margin: auto;
 	}
 `;

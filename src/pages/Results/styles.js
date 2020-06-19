@@ -19,3 +19,7 @@ export const JobsList = styled.div`
 	flex-direction: column;
 	width: 80%;
 `;
+
+export const Instructions = styled.h1`
+	text-align: center;
+`;
