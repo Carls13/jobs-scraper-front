@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.js": "/jobs-scraper-front/static/js/main.63704d15.chunk.js",
+    "main.js.map": "/jobs-scraper-front/static/js/main.63704d15.chunk.js.map",
+    "runtime-main.js": "/jobs-scraper-front/static/js/runtime-main.dc7ca196.js",
+    "runtime-main.js.map": "/jobs-scraper-front/static/js/runtime-main.dc7ca196.js.map",
+    "static/js/2.829ab166.chunk.js": "/jobs-scraper-front/static/js/2.829ab166.chunk.js",
+    "static/js/2.829ab166.chunk.js.map": "/jobs-scraper-front/static/js/2.829ab166.chunk.js.map",
+    "index.html": "/jobs-scraper-front/index.html",
+    "precache-manifest.d6b5280fc45f4892dc7392dfff8e22ab.js": "/jobs-scraper-front/precache-manifest.d6b5280fc45f4892dc7392dfff8e22ab.js",
+    "service-worker.js": "/jobs-scraper-front/service-worker.js",
+    "static/js/2.829ab166.chunk.js.LICENSE.txt": "/jobs-scraper-front/static/js/2.829ab166.chunk.js.LICENSE.txt",
+    "static/media/icon-hamburger.svg": "/jobs-scraper-front/static/media/icon-hamburger.bdd40cf9.svg",
+    "static/media/logo.png": "/jobs-scraper-front/static/media/logo.77f4a9b3.png",
+    "static/media/myself.JPG": "/jobs-scraper-front/static/media/myself.63b2380f.JPG",
+    "static/media/rocket.svg": "/jobs-scraper-front/static/media/rocket.4fedf7e1.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.dc7ca196.js",
+    "static/js/2.829ab166.chunk.js",
+    "static/js/main.63704d15.chunk.js"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "short_name": "COVID-19",
+  "name": "COVID-19 tracker built by Carls13",
+  "icons": [
+     {
+        "src": "./512x512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "hsl(192, 70%, 51%)",
+  "background_color": "#FFFFFF",
+  "prefer_related_applications": true,
+  "related_applications": [
+      {
+        "platform": "play",
+        "id": "com.google.samples.apps.iosched"
+      }
+    ]
+}
