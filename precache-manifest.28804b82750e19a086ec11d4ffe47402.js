@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2acee4d44be249f304fa599bec99b895",
+    "revision": "76a42079f08fc871899a0f7e86c4176b",
     "url": "/jobs-scraper-front/index.html"
   },
   {
-    "revision": "1471988a1c4b63944e94",
-    "url": "/jobs-scraper-front/static/js/2.829ab166.chunk.js"
+    "revision": "e43b4f9da62c20e779b1",
+    "url": "/jobs-scraper-front/static/js/2.56a977b2.chunk.js"
   },
   {
-    "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/jobs-scraper-front/static/js/2.829ab166.chunk.js.LICENSE.txt"
+    "revision": "603816eec26c1aff4a38bef8d08d40a6",
+    "url": "/jobs-scraper-front/static/js/2.56a977b2.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "94f44dc9a45b37f5c35f",
-    "url": "/jobs-scraper-front/static/js/main.63704d15.chunk.js"
+    "revision": "124ee7b675a0afb93ec5",
+    "url": "/jobs-scraper-front/static/js/main.30d35f56.chunk.js"
   },
   {
     "revision": "28e4db9637310ea8b4dc",
