@@ -18,6 +18,7 @@ function App() {
       <Header/>
       <Router>
       	<Index path="/"/>
+        <Index path="/jobs-scraper-front"/>
         <About path="/about"/>
       	<Results path="/results/:query"/>
       </Router>

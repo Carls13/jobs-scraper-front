@@ -22,8 +22,8 @@ export const Pagination = ({ data, currentPage, setPage, recordsPerPage }) => {
 		<PaginationDiv>
 			<PagesControl>
 				<PrevNext>
-					{currentPage !== 1 && <Prev onClick={() => setPage(currentPage - 1)}>Anterior</Prev>}
-					{(currentPage !== data.length && totalPages > 0) && <Next onClick={() => setPage(currentPage + 1)}>Siguiente</Next>}
+					{currentPage !== 1 && <Prev onClick={() => setPage(currentPage - 1)}>Previous</Prev>}
+					{(currentPage !== data.length && totalPages > 0) && <Next onClick={() => setPage(currentPage + 1)}>Next</Next>}
 				</PrevNext>
 					<Pages>
 						{
@@ -44,11 +44,11 @@ export const Pagination = ({ data, currentPage, setPage, recordsPerPage }) => {
 					</Pages>
 			</PagesControl>
 			<Info>
-				<Text>{`Página actual: ${totalPages === 0 ? totalPages : currentPage}`}</Text>
-				<Text>{`Registros mostrados: ${totalPages === 0 ? 0 : `${showingFrom} - ${showingUntil}`}`}</Text>
-				<Text>{`Total de páginas: ${totalPages}`}</Text>
-				<Text>{`Registros por página: ${recordsPerPage}`}</Text>
-				<Text>{`Total de registros: ${total}`}</Text>
+				<Text>{`Current page: ${totalPages === 0 ? totalPages : currentPage}`}</Text>
+				<Text>{`Showing records from: ${totalPages === 0 ? 0 : `${showingFrom} - ${showingUntil}`}`}</Text>
+				<Text>{`Total pages: ${totalPages}`}</Text>
+				<Text>{`Records per page: ${recordsPerPage}`}</Text>
+				<Text>{`Total records: ${total}`}</Text>
 			</Info>
 		</PaginationDiv>
 	)

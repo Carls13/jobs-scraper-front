@@ -1,6 +1,6 @@
 {
-  "short_name": "COVID-19",
-  "name": "COVID-19 tracker built by Carls13",
+  "short_name": "Jobs scraper",
+  "name": "Jobs scraper tracker built by Carls13",
   "icons": [
      {
         "src": "./512x512.png",
