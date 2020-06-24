@@ -10,7 +10,7 @@ export const Index = () => {
 	return (
 		<Container>
 			<Illustration src={illustration} alt="Carls 13 jobs scraper"/>
-			<SearchBlock/>
+			<SearchBlock id="search"/>
 			<Disclaimer>
 				The data is obtained from pages like Get On Board, RemoteOk and Triple Byte. <br/>
 				Please, note that some of them didn't publish a date so the offer info could mismatch from the actual one.

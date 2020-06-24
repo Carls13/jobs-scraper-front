@@ -33,7 +33,7 @@ export const Header = () => {
 					<Option to="/about">About</Option>
 				</MenuContainer>
 				<ButtonContainer>
-					<Anchor href="#contact">Search now!</Anchor>
+					<Anchor href="#search">Search now!</Anchor>
 				</ButtonContainer>
 				<BurgerContainer>
 					<Burger onClick={() => toggleMenu(!showMenu)} src={burger} alt="Easybank" />

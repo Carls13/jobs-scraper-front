@@ -53,7 +53,7 @@ export const Results = ({ query }) => {
 					recordsPerPage={JOBS_PER_PAGE}
 					/>
 					<Instructions>Wanna search something else?</Instructions>
-					<SearchBlock handleSubmit={() => {
+					<SearchBlock  id="search" handleSubmit={() => {
 						setJobs([]);
 						setLoading(true);
 					}}/>
